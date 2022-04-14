@@ -8,3 +8,4 @@
 - [Api](https://github.com/SkyLineLab/kapi/blob/main/Api.md)
 - [BotClient](https://github.com/SkyLineLab/kapi/blob/main/BotClient.md)
 - [BotProject](https://github.com/SkyLineLab/kapi/blob/main/BotProject.md)
+- [Bridge](https://github.com/SkyLineLab/kapi/blob/main/Bridge.md)
