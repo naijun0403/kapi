@@ -2,7 +2,7 @@
 
 > **Note**: 아직 개발 중인 구조입니다. 구조를 수정하고 싶으시면 고민 없이 PR을 넣어 주세요.
 
-## [BotClient](https://github.com/SkyLineLab/kapi/blob/main/BotClient.md) getClient()
+## [BotClient](https://github.com/SkyLineLab/kapi/blob/main/internal/BotClient.md) getClient()
 해당 프로젝트에 맞는 BotClient를 반환합니다.
 ### example
 ```javascript

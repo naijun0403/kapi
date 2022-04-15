@@ -5,7 +5,8 @@
 </p>
 
 ## 목차
-- [Api](https://github.com/SkyLineLab/kapi/blob/main/Api.md)
-- [BotClient](https://github.com/SkyLineLab/kapi/blob/main/BotClient.md)
-- [BotProject](https://github.com/SkyLineLab/kapi/blob/main/BotProject.md)
-- [Bridge](https://github.com/SkyLineLab/kapi/blob/main/Bridge.md)
+- [Api](https://github.com/SkyLineLab/kapi/blob/main/builtin/Api.md)
+- [BotClient](https://github.com/SkyLineLab/kapi/blob/main/internal/BotClient.md)
+- [BotProject](https://github.com/SkyLineLab/kapi/blob/main/builtin/BotProject.md)
+- [Bridge](https://github.com/SkyLineLab/kapi/blob/main/builtin/Bridge.md)
+- [MessageEvent](https://github.com/SkyLineLab/kapi/blob/main/event/MessageEvent.md)
