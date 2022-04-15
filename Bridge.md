@@ -21,7 +21,7 @@ Bridge.getGlobalByName("abc"); // LinkError: Not Found Project Name: abc
 ```javascript
 Bridge.getGlobalById(0); // -> [object global]
 
-Bridge.getGlobalByName(1); // LinkError: Not Found Project ID: 12
+Bridge.getGlobalById(1); // LinkError: Not Found Project ID: 12
 ```
 
 ## `Boolean` canAccessByName(String projectName)
@@ -39,5 +39,5 @@ Bridge.canAccessByName("abc"); // -> false
 ```javascript
 Bridge.canAccessById(0); // -> true
 
-Bridge.canAccessByName(1); // -> false
+Bridge.canAccessById(1); // -> false
 ```
