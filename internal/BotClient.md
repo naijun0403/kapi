@@ -26,3 +26,14 @@ client.addListener('message', (data) => {
 ```javascript
 client.off('message');
 ```
+
+## `Boolean` emit(String event, Object... args)
+등록한 이벤트를 호출합니다.
+### example
+```javascript
+client.addListener('plus', (a, b) => {
+    console.log(a + b);
+});
+
+client.emit('plus', 2, 3); // -> 5
+```
