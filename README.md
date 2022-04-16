@@ -10,3 +10,4 @@
 - [BotProject](https://github.com/SkyLineLab/kapi/blob/main/builtin/BotProject.md)
 - [Bridge](https://github.com/SkyLineLab/kapi/blob/main/builtin/Bridge.md)
 - [MessageEvent](https://github.com/SkyLineLab/kapi/blob/main/event/MessageEvent.md)
+- [PowerEvent](https://github.com/SkyLineLab/kapi/blob/main/event/PowerEvent.md)
