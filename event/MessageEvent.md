@@ -2,6 +2,19 @@
 
 > **Note**: 아직 개발 중인 구조입니다. 구조를 수정하고 싶으시면 고민 없이 PR을 넣어 주세요.
 
+## 개요
+메세지가 올때 발생하는 이벤트입니다.
+
+## `message`
+### example
+```javascript
+client.on('message', (data) => {
+   if (data.message === '!ping') {
+       data.room.send('pong!');
+   } 
+});
+```
+
 ## struct
 ```json5
 {
@@ -19,6 +32,6 @@
     markAsRead: function () { [native code] },
   },
   packageName: '패키지 명',
-  chat: Bundle // 알림에 담겨오는 데이터
+  chat: {} // 알림에 담겨오는 데이터 (android.os.Bundle)
 }
 ```
