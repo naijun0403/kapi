@@ -11,3 +11,6 @@
 - [Bridge](https://github.com/SkyLineLab/kapi/blob/main/builtin/Bridge.md)
 - [MessageEvent](https://github.com/SkyLineLab/kapi/blob/main/event/MessageEvent.md)
 - [PowerEvent](https://github.com/SkyLineLab/kapi/blob/main/event/PowerEvent.md)
+
+## 구현
+[Implement](https://github.com/SkyLineLab/kapi/blob/main/implement.md) 를 참고해주세요.
