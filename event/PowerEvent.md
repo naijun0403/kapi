@@ -7,18 +7,26 @@
 
 ## `boton`
 봇의 전원이 켜질때 발생하는 이벤트입니다.
+
+### 인자
+봇을 켠 시간의 `Date.now()`값 반환
+
 ### example
 ```javascript
-client.on('boton', () => {
+client.on('boton', (time) => {
     console.log('bot on!');
 })
 ```
 
 ## `botoff`
 봇의 전원이 꺼질때 발생하는 이벤트입니다.
+
+### 인자
+봇을 끈 시간의 `Date.now()`값 반환
+
 ### example
 ```javascript
-client.on('botoff', () => {
+client.on('botoff', (time) => {
     console.log('bot off!');
 })
 ```
