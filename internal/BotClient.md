@@ -27,7 +27,7 @@ client.addListener('message', (data) => {
 client.off('message');
 ```
 
-## `Boolean` emit(String event, Object... args)
+## `Boolean` dispatchEvent(String event, Object... args)
 등록한 이벤트를 호출합니다.
 ### example
 ```javascript
