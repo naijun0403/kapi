@@ -5,8 +5,7 @@
 ## 개요
 메세지가 올때 발생하는 이벤트입니다.
 
-## `message`
-### example
+## example
 ```javascript
 client.on('message', (data) => {
    if (data.message === '!ping') {
@@ -15,23 +14,31 @@ client.on('message', (data) => {
 });
 ```
 
-## struct
-```json5
-{
-  message: '메세지',
-  sender: {
-    name: '보낸사람',
-    profileBase64: '보낸사람 프사 base64로 인코딩한 문자열',
-    profileHash: 'profileBase64의 hashcode'
-  },
-  room: {
-    name: '방 이름',
-    isGroupChat: function () { [native code] }, // 자스 엔진에서 변수임에도 불구하고 function으로 처리함
-    send: function () { [native code] },
-    sendAllRoom: function () { [native code] }, // 지금까지 수신된 모든방에 채팅을 보냄
-    markAsRead: function () { [native code] },
-  },
-  packageName: '패키지 명',
-  chat: {} // 알림에 담겨오는 데이터 (android.os.Bundle)
-}
-```
+## 속성
+## message: `string`
+메세지의 내용
+## sender: `object`
+보낸 사람 정보
+### name
+`string` 보낸 사람의 이름
+### profileBase64: `string`
+보낸 사람의 프로필 사진을 base64로 인코딩한 문자열
+### profileHash: `number`
+profileBase64를 `java.lang.String.hashCode()`한 값
+## room: `object`
+방 정보
+### name: `string`
+방의 이름
+### isGroupChat: `function()`[^BUG]
+단체 채팅방이면 `true`, 아니라면 `false`를 반환
+[^BUG]: 봇 앱의 버그로 인해 원래라면 `boolean`이 맞지만 `function`입니다.
+### send: `function(string message)`
+메시지를 받은 방에 `message`라는 내용의 메시지를 전송
+### sendAllRoom: `function(string message)`
+전송 가능한 모든 방에 `message`라는 내용의 메시지를 보냅니다.
+### markAsRead: `function()`
+메시지를 받은 방을 읽음처리합니다.
+## packageName: `string
+메시지를 감지한 앱의 패키지 이름
+## chat: `android.os.Bundle`
+봇 앱이 받은 알림에 있는 데이터
