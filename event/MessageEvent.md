@@ -27,9 +27,9 @@ client.on('message', (data) => {
   room: {
     name: '방 이름',
     isGroupChat: function () { [native code] }, // 자스 엔진에서 변수임에도 불구하고 function으로 처리함
-    send: function () { [native code] },
-    sendAllRoom: function () { [native code] }, // 지금까지 수신된 모든방에 채팅을 보냄
-    markAsRead: function () { [native code] },
+    send: async function () { [native code] },
+    sendAllRoom: async function () { [native code] }, // 지금까지 수신된 모든방에 채팅을 보냄
+    markAsRead: async function () { [native code] },
   },
   packageName: '패키지 명',
   chat: {} // 알림에 담겨오는 데이터 (android.os.Bundle)
