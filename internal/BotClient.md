@@ -16,7 +16,7 @@ client.on('message', (data) => {
 
 ## addListener: `function(event: string, callback: function): BotClient`
 
-이벤트 리스너를 등록합니다. 이벤트 명은 Event를 참고해주세요
+이벤트 리스너를 등록합니다. 이벤트 명은 [Event](/event/Event.md)를 참고해주세요
 
 ### example
 
