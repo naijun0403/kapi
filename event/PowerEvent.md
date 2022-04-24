@@ -55,3 +55,6 @@ client.on('botoff', (data) => {
 |runtimeError|스크립트 오류로 인한 스크립트 종료|
 |compileError|스크립트 컴파일시 오류로 인한 스크립트 종료. 마지막으로 컴파일에 성공한 Context의 listener가 호출|
 |API|봇앱에 내장된 API로 전원 조작|
+
+## 참고
+* [Event](/event/Event.md) 클래스
