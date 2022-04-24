@@ -15,12 +15,13 @@ client.on('message', (data) => {
 ```
 
 ## 속성
+
 ## message: `string`
 메세지의 내용
 ## sender: `object`
 보낸 사람 정보
-### name
-`string` 보낸 사람의 이름
+### name `string` 
+보낸 사람의 이름
 ### profileBase64: `string`
 보낸 사람의 프로필 사진을 base64로 인코딩한 문자열
 ### profileHash: `number`
