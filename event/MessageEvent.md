@@ -63,7 +63,7 @@ profileBase64를 `java.lang.String.hashCode()`한 값
 
 메시지를 받은 방을 읽음처리합니다.
 
-## packageName: `string
+## packageName: `string`
 
 메시지를 감지한 앱의 패키지 이름
 
