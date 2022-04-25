@@ -51,15 +51,15 @@ profileBase64를 `java.lang.String.hashCode()`한 값
 단체 채팅방이면 `true`, 아니라면 `false`를 반환
 [^BUG]: 봇 앱의 버그로 인해 원래라면 `boolean`이 맞지만 `function`입니다.
 
-### send: `function(message: string)`
+### send: `function(message: string): Promise<boolean>`
 
 메시지를 받은 방에 `message`라는 내용의 메시지를 전송
 
-### sendAllRoom: `function(message: string)`
+### sendAllRoom: `function(message: string): Promise<boolean>`
 
 전송 가능한 모든 방에 `message`라는 내용의 메시지를 보냅니다.
 
-### markAsRead: `function()`
+### markAsRead: `function(): Promise<boolean>`
 
 메시지를 받은 방을 읽음처리합니다.
 
