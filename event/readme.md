@@ -5,5 +5,7 @@
 </p>
 
 ## 목차
-- [MessageEvent](https://github.com/SkyLineLab/kapi/blob/main/event/MessageEvent.md)
-- [PowerEvent](https://github.com/SkyLineLab/kapi/blob/main/event/PowerEvent.md)
+
+- [MessageEvent](/event/MessageEvent.md)
+- [PowerEvent](/event/PowerEvent.md)
+- [Event](/event/Event.md)
