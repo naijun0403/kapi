@@ -16,7 +16,7 @@ const customEvent = new Event('myEvent', {
     scope: 'globalTrusted'
 });
 // 이벤트의 이름은 대소문자를 구분하지 않음
-client.add('myevent', (event) => {
+client.addListener('myevent', (event) => {
     event.isTrusted //false
     event.data.hey //this is my custom event!
 });
