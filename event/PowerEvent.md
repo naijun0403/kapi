@@ -19,7 +19,7 @@ client.on('boton', (data) => {
     console.log('bot on!');
     console.log(data.target);
     if(data.target == 'script') {
-        console.log('name: ' + data.reason.name + ' line: ' + data.reason.line);
+        console.log('name: ' + data.detail.name + ' line: ' + data.detail.line);
     }
 })
 ```
@@ -35,7 +35,7 @@ client.on('botoff', (data) => {
     console.log('bot off!');
     console.log(data.target);
     if(data.target == 'script') {
-        console.log('name: ' + data.reason.name + ' line: ' + data.reason.line);
+        console.log('name: ' + data.detail.name + ' line: ' + data.detail.line);
     }
 })
 ```
@@ -46,11 +46,11 @@ client.on('botoff', (data) => {
 
 이벤트 발생 원인에 대한 정보를 담고있습니다.
 
-| target       | 설명                 |
-| ------------ | ------------------ |
-| globalSwitch | 사용자가 봇 앱 전원 조작     |
-| powerSwitch  | 사용자가 스크립트 전원 조작    |
-| script       | 오류또는 API 호출로 전원 조작 |
+| target       | 설명                  |
+|--------------|---------------------|
+| globalSwitch | 사용자가 봇 앱 전원 조작      |
+| powerSwitch  | 사용자가 스크립트 전원 조작     |
+| script       | 오류또는 API 호출로 전원 조작  |
 
 ### detail: `object`
 
@@ -60,6 +60,8 @@ client.on('botoff', (data) => {
 
 해당 이벤트가 발생한 스크립트 줄을 담고있습니다.
 
+`BOT_ON`이벤트이거나, 오류가 나서 꺼진경우가 아니라면 `null`이 반환됩니다.
+
 #### name: `string`
 
 해당 이벤트가 발생한 스크립트 이름을 담고있습니다.
@@ -67,7 +69,7 @@ client.on('botoff', (data) => {
 ### reason: `string`
 
 | reason       | 설명                                                             |
-| ------------ | -------------------------------------------------------------- |
+|--------------|----------------------------------------------------------------|
 | runtimeError | 스크립트 오류로 인한 스크립트 종료                                            |
 | compileError | 스크립트 컴파일시 오류로 인한 스크립트 종료. 마지막으로 컴파일에 성공한 Context의 listener가 호출 |
 | API          | 봇앱에 내장된 API로 전원 조작                                             |
