@@ -38,6 +38,13 @@ client.on('message', (data) => {
 
 profileBase64를 `java.lang.String.hashCode()`한 값
 
+### userHash: `string`
+
+안드로이드 11이상 + 카카오톡 버전이 9.7.0이상 이라면 모든 환경에서 고정적인 유저아이디 해쉬값을 리턴합니다.
+
+만일, 조건에 부합하지 못하면 다음과 같은 에러가 나옵니다.
+> `Error: userHash is not available on this environment`
+
 ## room: `object`
 
 방 정보
