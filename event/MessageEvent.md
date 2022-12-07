@@ -53,6 +53,10 @@ profileBase64를 `java.lang.String.hashCode()`한 값
 
 방의 이름
 
+### channelId: `number`
+
+기존의 `db`에서 `chat_id`라고 불리던 것으로, 알림이 온 방의 고유 아이디 값입니다.
+
 ### isGroupChat: `function()`[^BUG]
 
 단체 채팅방이면 `true`, 아니라면 `false`를 반환
@@ -73,6 +77,10 @@ profileBase64를 `java.lang.String.hashCode()`한 값
 ## packageName: `string`
 
 메시지를 감지한 앱의 패키지 이름
+
+## logId: `number`
+
+기존의 `db`에서 `log_id`라고 불리던 것으로, 메세지의 고유 아이디 값입니다.
 
 ## chat: `android.os.Bundle`
 
