@@ -26,16 +26,6 @@ const client = BotProject.client;
 BotProject.getAllProjectNames(); // -> ["test"]
 ```
 
-## getCurrentProjectId: `function(): number`
-
-프로젝트 아이디를 들고옵니다.
-
-### example
-
-```javascript
-BotProject.getCurrentProjectId(); // -> 0
-```
-
 ## getScriptContext: `function(): org.graalvm.polyglot.Context`
 
 해당 프로젝트의 GraalVM Context를 들고옵니다
