@@ -26,11 +26,9 @@ const client = BotProject.client;
 BotProject.getAllProjectNames(); // -> ["test"]
 ```
 
-## getScriptContext: `function(): org.graalvm.polyglot.Context`
+## getScriptContext: `function(): Context`
 
-해당 프로젝트의 GraalVM Context를 들고옵니다
-
-> **Warning**: 라이노 엔진의 경우 `org.mozilla.javascript.Context`를 반환합니다.
+해당 프로젝트의 엔진 Context를 반환합니다.
 
 ### example
 
