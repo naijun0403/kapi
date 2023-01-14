@@ -6,7 +6,7 @@
 
 ## 목차
 
-- [Api](/builtin/Api.md)
+- [App](/builtin/App.md)
 - [BotClient](/internal/BotClient.md)
 - [BotProject](/builtin/BotProject.md)
 - [Bridge](/builtin/Bridge.md)
