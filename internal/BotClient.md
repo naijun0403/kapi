@@ -2,7 +2,7 @@
 
 > **Note**: 아직 개발 중인 구조입니다. 구조를 수정하고 싶으시면 고민 없이 PR을 넣어 주세요.
 
-## channelList: [ChannelList](/internal/ChannelList.md)
+## channelList: `ChannelList`
 
 현재까지 알림이 온 채널 목록을 반환합니다.
 
