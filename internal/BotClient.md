@@ -2,6 +2,10 @@
 
 > **Note**: 아직 개발 중인 구조입니다. 구조를 수정하고 싶으시면 고민 없이 PR을 넣어 주세요.
 
+## channelList: [ChannelList](/internal/ChannelList.md)
+
+현재까지 알림이 온 채널 목록을 반환합니다.
+
 ## on: `function(event: string, callback: function): BotClient`
 
 이벤트 리스너를 등록합니다. 이벤트 명은 Event를 참고해주세요

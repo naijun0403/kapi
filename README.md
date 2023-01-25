@@ -1,7 +1,7 @@
 <h1 align="center">📜<br>Kapi</h1>
 
 <p align="center">
-이문서는 어쩌면 SkyLine만을 위한, API 문서
+이 문서는 어쩌면 SkyLine만을 위한, API 문서
 </p>
 
 ## 목차
@@ -13,6 +13,7 @@
 - [Event](/event/Event.md)
 - [MessageEvent](/event/MessageEvent.md)
 - [PowerEvent](/event/PowerEvent.md)
+- [ChannelList](/internal/ChannelList.md)
 
 ## 구현
 
