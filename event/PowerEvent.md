@@ -8,14 +8,14 @@
 
 ## Event
 
-### `boton`
+### `bot_on`
 
 봇의 전원이 켜질때 발생하는 이벤트입니다.
 
 #### example
 
 ```javascript
-client.on('boton', (data) => {
+client.on('bot_on', (data) => {
     console.log('bot on!');
     console.log(data.target);
     if(data.target == 'script') {
@@ -24,14 +24,14 @@ client.on('boton', (data) => {
 })
 ```
 
-### `botoff`
+### `bot_off`
 
 봇의 전원이 꺼질때 발생하는 이벤트입니다.
 
 #### example
 
 ```javascript
-client.on('botoff', (data) => {
+client.on('bot_off', (data) => {
     console.log('bot off!');
     console.log(data.target);
     if(data.target == 'script') {
