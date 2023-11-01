@@ -57,10 +57,14 @@ profileBase64를 `java.lang.String.hashCode()`한 값
 
 기존의 `db`에서 `chat_id`라고 불리던 것으로, 알림이 온 방의 고유 아이디 값입니다.
 
-### isGroupChat: `function()`[^BUG]
+### isGroupChat: `function(): boolean`[^BUG]
 
 단체 채팅방이면 `true`, 아니라면 `false`를 반환
 [^BUG]: 봇 앱의 버그로 인해 원래라면 `boolean`이 맞지만 `function`입니다.
+
+### isDebugChat: `function(): boolean`
+
+디버깅 목적으로 전송된 모든 채팅 이벤트에서는 `true`를 반환합니다.
 
 ### send: `function(message: string): Promise<boolean>`
 
