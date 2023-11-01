@@ -1,7 +1,7 @@
 <h1 align="center">📜<br>Kapi</h1>
 
 <p align="center">
-이 문서는 어쩌면 SkyLine만을 위한, API 문서
+더 편리하고, 직관적인 사용을 위한 봇 API 문서
 </p>
 
 ## 목차
